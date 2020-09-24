@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "FacePants",
+    "icons": ["facepants_icon.png"],
+    "description": "I'm tired of the world talking about masks, let's do as Scott Adams says and talk about pants instead!",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
